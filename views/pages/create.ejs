@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatePage</title>
+</head>
+<body>
+  <div class="backgroundCreate"></div>
+    <div class="container">
+        <!-- Row to center the form on the page -->
+    <div class="row">
+        <!-- Column to hold the form with additional styling -->
+        <div class="col-md-6 col-md-offset-3 text-center panel-with-background">
+          <!-- Panel with a default style -->
+          <div class="panel panel-default">
+            <!-- Panel heading with a title -->
+            <div class="panel-heading">
+              <h1>Create Your Event</h1>
+            </div>
+            <!-- Panel body containing the form -->
+            <div class="panel-body">
+              <!-- Form element -->
+              <form action="/events" method="post" class="form">
+                <!-- Form group for Event Name -->
+                <div class="form-group">
+                  <label for="name">Event Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter event name" required>
+                </div>
+                <!-- Form group for Event Location -->
+                <div class="form-group">
+                  <label for="location">Event Location:</label>
+                  <input type="text" class="form-control" id="location" name="location" placeholder="Enter event location" required>
+                </div>
+                <!-- Form group for Date of Event -->
+                <div class="form-group">
+                  <label for="date">Date of Event:</label>
+                  <input type="datetime-local" class="form-control" id="date" name="date" required>
+                </div>
+                <!-- Form group for Host -->
+                <div class="form-group">
+                  <label for="host">Host:</label>
+                  <input type="text" class="form-control" id="host" name="host" placeholder="Enter host name">
+                </div>
+                <!-- Form group for Additional Message -->
+                <div class="form-group">
+                  <label for="additionalMessage">Additional Message:</label>
+                  <textarea class="form-control" id="additionalMessage" rows="3" name="additionalMessage" placeholder="Enter additional message"></textarea>
+                </div>
+                <div class="btnContainer1">
+                  <!-- Submit button -->
+                  <button type="submit" class="btnOther" class="btn btn-primary"><span class="text">Create</span></button>
+                  <!-- Cancel button -->
+                  <button type="button" class="btnOther" class="btn btn-default" onclick="cancelInfo()"><span class="text">Clear</span></button>
+                  <!-- Update -->
+                  <button type="button" class="btnOther" onclick="getInfo()"><span class="text">Update</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+    </div>
+
+    
+</body>
+</html>
